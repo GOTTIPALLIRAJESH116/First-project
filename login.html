@@ -4,14 +4,49 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>login page</title>
+	<link rel="stylesheet" type="text/css" href="navigation.css">
+	<style type="text/css">
+		body{
+			background-image: url(https://img.lovepik.com/desgin_photo/40121/5221_detail.jpg!detail808);
+			background-color: indigo;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: fixed;
+			background-size: 40%;
+		}
+		h1{
+			margin-top: 12%;
+			color: green;
+		}
+		.username{
+			padding: 1%;
+			border-radius: 20px;
+		}
+		.number{
+			padding: 1%;
+			border-radius: 20px;
+		}
+		.login{
+			padding: 1%;
+			border-radius: 20px;
+			background-color:blue ;
+			color: white;
+
+		}
+	</style>
 </head>
 <body>
+	<nav class="navbar">
+		<a href="register.html">Register</a>
+		<a href="login.html">Login</a>
+		<a href="task.html">Task</a>
+	</nav>
 	<center>
 	<form action="task.html">
 		<h1>Login Form</h1>
-		<p><input type="text" placeholder="enter user name" required></p>
-		<p><input type="number" placeholder="enter password" required></p>
-		<button><b>login</b></button>
+		<p><input class="username" type="text" placeholder="enter user name" required></p>
+		<p><input class="number" type="number" placeholder="enter password" required></p>
+		<button class="login"><b>login</b></button>
 	</form>
 </center>
 </body>

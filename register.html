@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>register form</title>
+	<link rel="stylesheet" type="text/css" href="navigation.css">
+	<style type="text/css">
+		body{
+			background-image: url(https://cdn3.vectorstock.com/i/1000x1000/35/32/background-template-with-blue-flowers-vector-28123532.jpg);
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 60%;
+
+		}
+		.register{
+			padding: 1%;
+		}
+		input{
+			margin-top: 2px;
+			border-radius: 200px;
+			padding: 12px;
+		}
+		input:hover{
+			background-color: orange;
+		}
+		.select{
+			background-color: orange;
+			border-radius: 12px;
+			margin-top: 2px;
+			padding: 12px;
+		}
+		.submit{
+			background-color: blue;
+			color: white;
+			padding: 1%;
+			border-radius:20px ;
+			width: 8%;
+			font-size: 15px;
+		}
+		.reset{
+			background-color: red;
+			color: white;font-size: 15px;
+			width: 8%;padding: 1%;
+		}
+		.dob{
+			width: 11%;
+		}
+		.team{
+			width: 12%;
+			padding: 1%%;
+			
+		}
+		</style>
+</head>
+<body>
+	<nav class="navbar">
+		<a href="register.html">Register</a>
+		<a href="login.html">Login</a>
+		<a href="task.html">Task</a>
+	</nav>
+	<center>
+	<form class="register" action="login.html">
+		<h1>Regisrtation Form</h1>		
+		<p><input type="text" placeholder="enter name" required></p>
+		<p><input type="number" placeholder="enter age" required></p>
+		<p><input class="dob" type="date"></p>
+		<p><input type="email" placeholder="enter email address"></p>
+		<p><input type="password" placeholder="enter password"></p>
+		<p><input type="confirm password" placeholder="confirm password"></p>
+		<input class="male" type="radio" name="gender" value="male">male
+		<input class="female" type="radio" name="gender" value="female">female
+		<p>
+		<select class="team">
+		<option value="select yor team">select your team</option>
+		<option value="csk">csk</option>
+		<option value="rcb">rcb</option>
+		</select></p>
+		<p><button class="submit">submit</button></p>
+		<p><input class="reset" type="reset"></p>
+		</form>
+	</center>
+</body>
+</html>
